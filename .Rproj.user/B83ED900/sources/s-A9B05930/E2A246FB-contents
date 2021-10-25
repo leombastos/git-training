@@ -18,5 +18,6 @@ output: html_document
   - to check and copy public key, `cat ~/.ssh/id_ed25519.pub`
   - On GitHub, click on New SSH key, give it a title, and under Key, paste the entire result from the cat call above.  
   - To test, go on shell and type `ssh -T git@github.com`
+  - to connect local with remote, do `git remote add origin git@github.com:leombastos/git-training`
   
 
