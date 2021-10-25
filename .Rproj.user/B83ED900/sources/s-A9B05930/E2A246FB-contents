@@ -1,0 +1,22 @@
+---
+title: "gitnotes"
+output: html_document
+---
+
+- folders in .gitignore will be ignored, including the files inside them.  
+
+- Microsoft bought github!
+
+- authenticating ssh on github:
+  - Settings > SSH and GPG keys
+  - `ls -al ~/.ssh` to check current keys
+  - ssh-keygen -t ed25519 -C 'personallaptop' 
+    can overwrite=yes if prompted
+    can chose wheter want to create a passphrase, it is ok to leave blank for easier batch processing
+  - run `ls -al ~/.ssh` again
+  - *.pub is the public key
+  - to check and copy public key, `cat ~/.ssh/id_ed25519.pub`
+  - On GitHub, click on New SSH key, give it a title, and under Key, paste the entire result from the cat call above.  
+  - To test, go on shell and type `ssh -T git@github.com`
+  
+
